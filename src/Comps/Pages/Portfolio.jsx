@@ -1,13 +1,30 @@
+import { MediaItem } from "../Elements/MediaItem";
+import { Grid } from "@chakra-ui/react";
+import korea_week_sm from "../../img/korea_week_sm.jpg";
+
+export const Portfolio = () => {
+  return (
+    <Grid templateColumns="repeat(1, 1fr)" m={20} gap={10}>
+      <MediaItem>
+        <h1>קוריאה בישראל</h1>
+        <img src={korea_week_sm}></img>
+        <a href="https://ksf.co.il/events/korean-week" target="_blank"><h1>שבוע קוריאה 2022 באוניברסיטה העברית</h1></a>
+      </MediaItem>
+      <MediaItem>
+        <h1>קוריאה בישראל</h1>
+        <img src={korea_week_sm}></img>
+      </MediaItem>
+    </Grid>
+  );
+};
+
 //comp header: נוכחות ברשת נאוה כליל החורש: מה אני 2
 //rest of links - https://docs.google.com/document/d/1sKVwLGf3-bOcbMNAtBgY0PHSV-8L3ncX8vCYQqM6otc/edit#
-
 
 // כתבות
 // כתבה על גוגאק - מוסיקה קוריאנית מסורתית פרק 1 באתר אקספלור קוריאה
 
 // https://www.explorekorea.co.il/%d7%aa%d7%a8%d7%91%d7%95%d7%aa-%d7%a7%d7%95%d7%a8%d7%99%d7%90%d7%94/%d7%9e%d7%95%d7%a1%d7%99%d7%a7%d7%94-%d7%a7%d7%95%d7%a8%d7%99%d7%90%d7%a0%d7%99%d7%aa-%d7%94%d7%a7%d7%93%d7%9e%d7%94/
-
-
 
 // הרצאות
 // שישי קוריאני: מוסיקה מסורתית ומוסיקה בקוריאה, הרצאה על גוגאק 2021
@@ -29,7 +46,6 @@
 //https://www.mako.co.il/news-lifestyle/2022_q1/Article-3066a1120a81f71026.htm
 // https://www.mako.co.il/news-world/2022_q1/Article-90a2021c5fd1f71027.htm
 
-
 // --mark---
 
 // הפקות
@@ -44,14 +60,9 @@
 // פסטיבל יוצאי התיבה
 // עם התמונה הזאת
 
-// תמונות להוספה בלי טקסט למטה: 
+// תמונות להוספה בלי טקסט למטה:
 // פוסטר של ההרצאה
 // סיור בעיר העתיקה
 
-
-
 // The Sun Avoiders Project
 // הזמנה לקימצ'י לייב
-
-
-

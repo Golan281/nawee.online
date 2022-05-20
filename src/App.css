@@ -26,15 +26,28 @@
 
 a, .App-link {
   text-decoration: none;
-  /* color: #ECEDED; */
-  color: #8171b5;
+  color: #ECEDED;
+  /* display: inline;
+  margin: none;
+  align-self: center; */
+  /* color: #8171b5; */
   /* filter: contrast(130%); */
 }
-.App-link:hover, button:hover, a:hover {
-  /* color: #ECEDED; */
-  filter: contrast(130%);
+
+.center {
+  text-align: center;
+  padding:80px;
 }
 
+p {
+  font-size: 20px;
+}
+.App-link:hover, a:hover {
+  color: #E25E98;
+  filter: contrast(130%);
+  cursor: pointer;
+}
+/* 
 button {
   background-color: #E25E98;
   color: #19132F;
@@ -42,7 +55,7 @@ button {
   max-width: 100px;
   font-size: 20px;
   border-radius: 10px;
-}
+} */
 
 
 @keyframes App-logo-spin {
