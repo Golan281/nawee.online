@@ -34,19 +34,34 @@ a, .App-link {
   /* filter: contrast(130%); */
 }
 
+.portfolio-img {
+  /* max-width: 60%;
+  max-height: 60%; */
+  border-radius: 6px;
+  box-shadow: #ECEDED;
+  /* margin: none;
+  padding:none; */
+
+}
+
 .center {
   text-align: center;
   padding:80px;
 }
+
 
 p {
   font-size: 20px;
 }
 .App-link:hover, a:hover {
   color: #E25E98;
-  filter: contrast(130%);
+  filter: contrast(110%);
   cursor: pointer;
 }
+
+/* a:active {
+  background-color: aquamarine;
+} */
 /* 
 button {
   background-color: #E25E98;

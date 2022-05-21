@@ -11,16 +11,23 @@ export const useLang = () => {
     // Object.freeze(Lang);
 
     const [lang,setLang] = useState('HEB');
-    const switchLanguage = () => {
-        return `lang switched`;
+    const switchToEng = () => {
+        setLang('ENG');
+        return console.log(`lang switched`);
     }
-
+    const switchToHeb = () => {
+        setLang('HEB');
+        return console.log(`lang switched`);
+    }
 
     useEffect(()=> {
         //use effect will handle:
-        //  - helmet (href lang) 
-        //  - text direction (rtl for HEB, else ltr)
+        //  - menu items
+        //  - portfolio page headers and links
+        //  - helmet (href lang) for both pages (if too much work - consider v2) 
+        //  v2 - text direction (rtl for HEB, else ltr) when needed
+
     },[])
 
-    return { lang, setLang, switchLanguage}
+    return { lang, setLang, switchToEng, switchToHeb}
 }

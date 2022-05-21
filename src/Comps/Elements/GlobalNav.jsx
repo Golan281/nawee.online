@@ -18,12 +18,14 @@ export const GlobalNav = () => {
           <img src={logo} className="App-logo" alt="logo" />
         </NavLink>
         {/* <Heading>Nave Klil Hahoresh</Heading> */}
-        {/* <Heading>נָאוֶה כליל החורש</Heading>
+        {/* 
           <Heading>나베 클릴</Heading> */}
         <Grid templateRows="repeat(1, 1fr)">
           <Center>
             {/* <div className="center"> */}
-            <h1>Nave Klil Hahoresh</h1>
+            {/* <h1>Nave Klil Hahoresh</h1> */}
+            <Heading as='h1' size='xl'>נָאוֶה כליל החורש</Heading>
+            {/* <h1>נָאוֶה כליל החורש</h1> */}
             {/* </div> */}
           </Center>
         </Grid>
