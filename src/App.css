@@ -1,4 +1,15 @@
+@font-face {
+  font-family: 'Suez One';
+  src: url('./lib/fonts/SuezOne-Regular.woff2') format('woff2'),
+      url('./lib/fonts/SuezOne-Regular.woff') format('woff'),
+      url('./lib/fonts/SuezOne-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 .App {
+  /* font-family: 'Suez One', 'Roboto', 'Arial'; */
   text-align: center;
 }
 
@@ -16,6 +27,7 @@
 .App-header {
   background-color: #19132F;
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,7 +47,8 @@ a, .App-link {
 }
 
 .portfolio-img {
-  /* max-width: 60%;
+  /* align-self: center;
+  max-width: 60%;
   max-height: 60%; */
   border-radius: 6px;
   box-shadow: #ECEDED;
@@ -83,3 +96,15 @@ button {
     /* transform: translate3d(500); */
   }
 }
+
+ @media screen and (max-width: 730px) {
+  .contact-text {
+    display: none;
+  }
+} 
+/* 
+@media screen and (max-width: 600px) {
+  .App-logo {
+    display: none;
+  }
+} */

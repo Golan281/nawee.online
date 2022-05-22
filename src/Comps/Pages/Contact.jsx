@@ -40,13 +40,13 @@ export const Contact = () => {
           </a>
             <a href="tel:+972522796119">
               <MdLocalPhone size="2rem"/>
-              <p>+972 52 2796 119</p>
+              <p className="contact-text">+972 52 2796 119</p>
             </a>
           <a href="#" target="_blank" rel="noreferrer">
-            <RiKakaoTalkFill size="2rem" /> <p>nomok1</p>
+            <RiKakaoTalkFill size="2rem" /> <p className="contact-text">nomok1</p>
           </a>
           <a href="mailto:contact@Navekh.kim@gmail.com">
-            <MdEmail size="2rem" /> <p>Navekh.kim@gmail.com</p>
+            <MdEmail size="2rem" /> <p className="contact-text">Navekh.kim@gmail.com</p>
           </a>
         </Grid>
       </Box>

@@ -1,6 +1,6 @@
 import {
   Grid,
-  GridItem,
+  SimpleGrid,
   Button,
   Heading,
   Center,
@@ -8,43 +8,49 @@ import {
 import logo from "../../img/logo_pink.png";
 import { LangSwitcher } from "./LangSwitcher";
 import { NavLink } from "react-router-dom";
+import { LangContext } from "../../Contexts/LangContext";
+import { useContext } from "react";
 
 export const GlobalNav = () => {
-  // const [] lang state
+  const { currentLang } = useContext(LangContext);
   return (
     <>
-      <Grid templateColumns="repeat(3, 260px)" gap={4}>
+      {/* <SimpleGrid columns={{ base: 3, md: 3, sm: 1 }} minChildWidth="200px" spacing="40px"> */}
         <NavLink to="/home">
           <img src={logo} className="App-logo" alt="logo" />
         </NavLink>
-        {/* <Heading>Nave Klil Hahoresh</Heading> */}
-        {/* 
-          <Heading>나베 클릴</Heading> */}
+      <Grid templateColumns="repeat(1, 22rem)" gap={2}>
+        {/* <Grid
+          templateColumns=
+            "repeat(3, 260px)"
+          gap={4}
+        > */}
+
         <Grid templateRows="repeat(1, 1fr)">
           <Center>
-            {/* <div className="center"> */}
-            {/* <h1>Nave Klil Hahoresh</h1> */}
-            <Heading as='h1' size='xl'>נָאוֶה כליל החורש</Heading>
-            {/* <h1>נָאוֶה כליל החורש</h1> */}
-            {/* </div> */}
+            <Heading as="h1" size="xl">
+              {currentLang.logo}
+            </Heading>
           </Center>
         </Grid>
-        <Grid>
-          <LangSwitcher />
-        </Grid>
+        <Grid>{/* <LangSwitcher /> */}</Grid>
       </Grid>
-      <Grid templateColumns="repeat(2, 1fr)" gap={4}>
+      <Grid templateColumns="repeat(3, 1fr)" gap={4}>
+        <>
+          <LangSwitcher />
+        </>
         <NavLink to="/nawee">
           <Button bg="#E25E98" color="#19132F">
-            מה אני
+            {currentLang.portfolioBtn}
           </Button>
         </NavLink>
         <NavLink to="/contact">
           <Button bg="#E25E98" color="#19132F">
-            צרו קשר
+            {currentLang.contactBtn}
           </Button>
         </NavLink>
       </Grid>
+      {/* </SimpleGrid> */}
     </>
   );
 };

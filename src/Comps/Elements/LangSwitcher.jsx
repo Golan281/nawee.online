@@ -6,24 +6,19 @@ import {
   Center,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import { LangContext } from "../../Contexts/LangContext";
+import { useContext } from "react";
 
 export const LangSwitcher = () => {
-  const [lang,setLang] = useState('HEB');
-  const switchToEng = () => {
-      setLang('ENG');
-      return console.log(`lang switched`);
-  }
-  const switchToHeb = () => {
-      setLang('HEB');
-      return console.log(`lang switched`);
-  }
+  
+  const { currentLang, setCurrentLang, switchToEng, switchToHeb } = useContext(LangContext);
   return (
     <Center>
-      <Grid templateColumns="repeat(1, 30px)" gap={2}>
-        <Button onClick={switchToHeb} bg="#E25E98" color="#19132F" size="xs">
+      <Grid templateColumns="repeat(2, 20px)" gap={2}>
+        <Button onClick={switchToHeb} bg="#E25E98" color="#19132F" size="xs" fontSize={10}>
           HEB
         </Button>
-        <Button onClick={switchToEng} bg="#E25E98" color="#19132F" size="xs">
+        <Button onClick={switchToEng} bg="#E25E98" color="#19132F" size="xs" fontSize={10}>
           ENG
         </Button>
         {/* <Button bg="#E25E98" color="#19132F" size="xs">
