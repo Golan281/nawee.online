@@ -13,6 +13,7 @@ export const multiLangText = [
         moreProjects_h1: 'עוד פרויקטים',
         moreProjects_h2_gugak: 'כתבה על גוגאק - מוסיקה קוריאנית מסורתית פרק 1 באתר אקספלור קוריאה',
         moreProjects_h2_krFri: 'שישי קוריאני: הרצאה על מוסיקה מסורתית ומוסיקה בקוריאה',
+        //eslint-disable-next-line
         moreProjects_h2_Concerto: "מקס ברוך, קונצ'\רטו לויולה וקלרינט, בקונצרט עם התזמורת העברית באוניברסיטה המורמונית",
     } }, 
     //aka [1]

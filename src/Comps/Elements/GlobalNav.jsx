@@ -1,6 +1,5 @@
 import {
   Grid,
-  SimpleGrid,
   Button,
   Heading,
   Center,

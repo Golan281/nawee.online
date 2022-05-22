@@ -25,6 +25,7 @@ export const Portfolio = () => {
           <a
             href="https://ksf.co.il/events/korean-week"
             target="_blank"
+            rel="noreferrer"
           >
               {/* <Image
     boxSize='80%'
@@ -35,12 +36,14 @@ export const Portfolio = () => {
             <img
               className="portfolio-img"
               src={korea_week_sm}
+              alt="korea week"
             ></img>
           </a>
         </Center>
         <a
           href="https://ksf.co.il/events/korean-week"
           target="_blank"
+          rel="noreferrer"
         >
           <h2>{portfolioContent.koreaIL_h2}</h2>
         </a>
@@ -50,16 +53,19 @@ export const Portfolio = () => {
           <a
             href="https://www.youtube.com/watch?v=gNsDDVRsptA"
             target="_blank"
+            rel="noreferrer"
           >
             <img
               className="portfolio-img"
               src={gayageum_sm}
+              alt="gatageum"
             ></img>
           </a>
         </Center>
         <a
           href="https://www.youtube.com/watch?v=gNsDDVRsptA"
           target="_blank"
+          rel="noreferrer"
         >
           <h2>{portfolioContent.korea_gy_h2}</h2>
         </a>
@@ -72,16 +78,19 @@ export const Portfolio = () => {
           <a
             href="https://www.facebook.com/media/set/?set=a.2181724548569511&type=3"
             target="_blank"
+            rel="noreferrer"
             >
             <img
               className="portfolio-img"
               src={ark_people_sm}
+              alt="out of the box festival poster"
               ></img>
           </a>
         </Center>
         <a
           href="https://www.facebook.com/media/set/?set=a.2181724548569511&type=3"
           target="_blank"
+          rel="noreferrer"
           >
           <h2>
           {portfolioContent.productions_h2}
@@ -95,16 +104,19 @@ export const Portfolio = () => {
           <a
             href="https://www.google.com/url?q=https://www.mako.co.il/news-lifestyle/2022_q1/Article-3066a1120a81f71026.htm&sa=D&source=docs&ust=1653068284434044&usg=AOvVaw2c_MbTL3YLosFwgTHRnixk"
             target="_blank"
+            rel="noreferrer"
           >
             <img
               className="portfolio-img"
               src={korean_translation_sm}
+              alt="12 news south korea documentary screenshot"
             ></img>
           </a>
         </Center>
         <a
           href="https://www.google.com/url?q=https://www.mako.co.il/news-lifestyle/2022_q1/Article-3066a1120a81f71026.htm&sa=D&source=docs&ust=1653068284434044&usg=AOvVaw2c_MbTL3YLosFwgTHRnixk"
           target="_blank"
+          rel="noreferrer"
         >
           <h2>
           {portfolioContent.translationWork_h2}
@@ -116,16 +128,19 @@ export const Portfolio = () => {
           <a
             href="https://www.facebook.com/Thesunavoiders"
             target="_blank"
+            rel="noreferrer"
           >
             <img
               className="portfolio-img"
               src={sun_avoiders_sm}
+              alt="the sun avoiders"
             ></img>
           </a>
         </Center>
         <a
           href="https://www.facebook.com/Thesunavoiders"
           target="_blank"
+          rel="noreferrer"
         >
           <h2>{portfolioContent.sunAvoiders_h2}</h2>
         </a>
@@ -136,6 +151,7 @@ export const Portfolio = () => {
           <a
             href="https://www.explorekorea.co.il/%d7%aa%d7%a8%d7%91%d7%95%d7%aa-%d7%a7%d7%95%d7%a8%d7%99%d7%90%d7%94/%d7%9e%d7%95%d7%a1%d7%99%d7%a7%d7%94-%d7%a7%d7%95%d7%a8%d7%99%d7%90%d7%a0%d7%99%d7%aa-%d7%94%d7%a7%d7%93%d7%9e%d7%94/"
             target="_blank"
+            rel="noreferrer"
           >
 <h2>{portfolioContent.moreProjects_h2_gugak}</h2>
           </a>
@@ -144,6 +160,7 @@ export const Portfolio = () => {
           <a
             href="https://www.youtube.com/watch?v=sVy3ZeFXQgI&t=3366s&ab_channel=KoreanStudiesForuminIsrael"
             target="_blank"
+            rel="noreferrer"
             >
             <h2>{portfolioContent.moreProjects_h2_krFri}</h2>
           </a>
@@ -152,6 +169,7 @@ export const Portfolio = () => {
           <a
             href="https://www.youtube.com/watch?t=3381&v=rPVK1rzBx_Y&feature=youtu.be"
             target="_blank"
+            rel="noreferrer"
             >
             <h2>{portfolioContent.moreProjects_h2_Concerto}</h2>
           </a>
@@ -160,18 +178,21 @@ export const Portfolio = () => {
           <img
             src={korean_friday_sm}
             className="portfolio-img"
+            alt="korean friday flyer"
           ></img>
         </Center>
         <Center m={10}>
           <img
             src={jlem_tour_sm}
             className="portfolio-img"
+            alt="jerusalem tour"
           ></img>
         </Center>
         <Center m={10}>
           <img
             src={kim_live_sm}
             className="portfolio-img"
+            alt="live kimchi workshop flyer"
           ></img>
         </Center>
       </MediaItem>

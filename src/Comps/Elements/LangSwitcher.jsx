@@ -1,17 +1,14 @@
 import {
   Button,
   Grid,
-  Wrap,
-  WrapItem,
   Center,
 } from "@chakra-ui/react";
-import { useState } from "react";
 import { LangContext } from "../../Contexts/LangContext";
 import { useContext } from "react";
 
 export const LangSwitcher = () => {
   
-  const { currentLang, setCurrentLang, switchToEng, switchToHeb } = useContext(LangContext);
+  const { switchToEng, switchToHeb } = useContext(LangContext);
   return (
     <Center>
       <Grid templateColumns="repeat(2, 20px)" gap={2}>

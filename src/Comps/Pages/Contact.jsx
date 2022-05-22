@@ -42,7 +42,7 @@ export const Contact = () => {
               <MdLocalPhone size="2rem"/>
               <p className="contact-text">+972 52 2796 119</p>
             </a>
-          <a href="#" target="_blank" rel="noreferrer">
+          <a href="https://play.google.com/store/apps/details?id=com.kakao.talk&hl=en&gl=US" target="_blank" rel="noreferrer">
             <RiKakaoTalkFill size="2rem" /> <p className="contact-text">nomok1</p>
           </a>
           <a href="mailto:contact@Navekh.kim@gmail.com">
