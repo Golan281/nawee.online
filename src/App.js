@@ -1,10 +1,8 @@
-import logo from './img/logo_pink.png';
 import './App.css';
 import { GlobalNav } from './Comps/Elements/GlobalNav';
 import { Contact } from './Comps/Pages/Contact';
-import { ChakraProvider, Heading } from '@chakra-ui/react'
-import React, { useState } from 'react';
-import { LangSwitcher } from './Comps/Elements/LangSwitcher';
+import { ChakraProvider} from '@chakra-ui/react'
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Portfolio } from "./Comps/Pages/Portfolio";
 import { LangContext } from "./Contexts/LangContext";
