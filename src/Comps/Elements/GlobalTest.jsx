@@ -5,7 +5,7 @@ import {
 //   Avatar,
   HStack,
   Link,
-  IconButton,
+  // IconButton,
   Button,
   Menu,
   MenuButton,
@@ -36,25 +36,26 @@ const NavLink = ({ children }) => (
 );
 
 export default function GlobalTest() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  // const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen } = useDisclosure();
 
   return (
     <>
       <Box bg={'inherit'} px={4} pos="absolute" top="0" left="0">
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <IconButton
+          {/* <IconButton
             size={'md'}
             // icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
-          />
+          /> */}
           <HStack spacing={8} alignItems={'center'}>
             {/* <Box>Logo</Box> */}
             <HStack
               as={'nav'}
               spacing={4}
-              display={{ base: 'none', md: 'flex' }}>
+              display={{ base: 'flex', md: 'flex' }}>
                   <LangSwitcher pt={10}/>
               {/* {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
