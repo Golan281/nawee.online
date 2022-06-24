@@ -8,7 +8,7 @@ import { useContext } from "react";
 
 export const LangSwitcher = () => {
   
-  const { switchToEng, switchToHeb } = useContext(LangContext);
+  const { switchToEng, switchToHeb, switchToKor} = useContext(LangContext);
   return (
     <Center>
       <Grid templateColumns="repeat(2, 20px)" gap={2}>
@@ -17,6 +17,9 @@ export const LangSwitcher = () => {
         </Button>
         <Button onClick={switchToEng} bg="#E25E98" color="#19132F" size="xs" fontSize={10}>
           ENG
+        </Button>
+        <Button onClick={switchToKor} bg="#E25E98" color="#19132F" size="xs" fontSize={10}>
+          KOR
         </Button>
         {/* <Button bg="#E25E98" color="#19132F" size="xs">
           KR

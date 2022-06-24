@@ -86,6 +86,17 @@ button {
 } */
 
 
+/* .global-nav {
+  position: fixed;
+  border: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+} 
+*/
+
+
 @keyframes App-logo-spin {
   from {
     /* transform: translate3d(0); */

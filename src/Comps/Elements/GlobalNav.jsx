@@ -5,7 +5,7 @@ import {
   Center,
 } from "@chakra-ui/react";
 import logo from "../../img/logo_pink.png";
-import { LangSwitcher } from "./LangSwitcher";
+// import { LangSwitcher } from "./LangSwitcher";
 import { NavLink } from "react-router-dom";
 import { LangContext } from "../../Contexts/LangContext";
 import { useContext } from "react";
@@ -13,12 +13,13 @@ import { useContext } from "react";
 export const GlobalNav = () => {
   const { currentLang } = useContext(LangContext);
   return (
-    <>
+    <div className="global-nav">
       {/* <SimpleGrid columns={{ base: 3, md: 3, sm: 1 }} minChildWidth="200px" spacing="40px"> */}
         <NavLink to="/home">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo} className="App-logo" alt="logo" width="100%" height=
+          "100%"/>
         </NavLink>
-      <Grid templateColumns="repeat(1, 22rem)" gap={2}>
+      <Grid templateColumns="repeat(1, 2fr)" gap={2}>
         {/* <Grid
           templateColumns=
             "repeat(3, 260px)"
@@ -35,12 +36,14 @@ export const GlobalNav = () => {
         <Grid>{/* <LangSwitcher /> */}</Grid>
       </Grid>
       <Grid templateColumns="repeat(3, 1fr)" gap={4}>
-        <>
-          <LangSwitcher />
-        </>
         <NavLink to="/nawee">
           <Button bg="#E25E98" color="#19132F">
             {currentLang.portfolioBtn}
+          </Button>
+        </NavLink>
+        <NavLink to="/about">
+          <Button bg="#E25E98" color="#19132F">
+            {currentLang.aboutBtn}
           </Button>
         </NavLink>
         <NavLink to="/contact">
@@ -49,7 +52,10 @@ export const GlobalNav = () => {
           </Button>
         </NavLink>
       </Grid>
+        <>
+          {/* <LangSwitcher /> */}
+        </>
       {/* </SimpleGrid> */}
-    </>
+    </div>
   );
 };
