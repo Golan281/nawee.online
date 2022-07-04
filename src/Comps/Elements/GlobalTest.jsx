@@ -22,7 +22,7 @@ import { LangSwitcher } from './LangSwitcher';
 const Links = ['HE', 'EN', 'KR'];
 
 const NavLink = ({ children }) => (
-  
+
   <Link
     px={2}
     py={1}

@@ -13,12 +13,13 @@ import { useContext } from "react";
 export const GlobalNav = () => {
   const { currentLang } = useContext(LangContext);
   return (
-    <>
+    <div className="global-nav">
       {/* <SimpleGrid columns={{ base: 3, md: 3, sm: 1 }} minChildWidth="200px" spacing="40px"> */}
         <NavLink to="/home">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo} className="App-logo" alt="logo" width="100%" height=
+          "100%"/>
         </NavLink>
-      <Grid templateColumns="repeat(1, 22rem)" gap={2}>
+      <Grid templateColumns="repeat(1, 2fr)" gap={2}>
         {/* <Grid
           templateColumns=
             "repeat(3, 260px)"
@@ -55,6 +56,6 @@ export const GlobalNav = () => {
           {/* <LangSwitcher /> */}
         </>
       {/* </SimpleGrid> */}
-    </>
+    </div>
   );
 };
