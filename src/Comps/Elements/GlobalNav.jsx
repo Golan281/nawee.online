@@ -5,7 +5,7 @@ import {
   Center,
 } from "@chakra-ui/react";
 import logo from "../../img/logo_pink.png";
-import { LangSwitcher } from "./LangSwitcher";
+// import { LangSwitcher } from "./LangSwitcher";
 import { NavLink } from "react-router-dom";
 import { LangContext } from "../../Contexts/LangContext";
 import { useContext } from "react";
@@ -35,12 +35,14 @@ export const GlobalNav = () => {
         <Grid>{/* <LangSwitcher /> */}</Grid>
       </Grid>
       <Grid templateColumns="repeat(3, 1fr)" gap={4}>
-        <>
-          <LangSwitcher />
-        </>
         <NavLink to="/nawee">
           <Button bg="#E25E98" color="#19132F">
             {currentLang.portfolioBtn}
+          </Button>
+        </NavLink>
+        <NavLink to="/about">
+          <Button bg="#E25E98" color="#19132F">
+            {currentLang.aboutBtn}
           </Button>
         </NavLink>
         <NavLink to="/contact">
@@ -49,6 +51,9 @@ export const GlobalNav = () => {
           </Button>
         </NavLink>
       </Grid>
+        <>
+          {/* <LangSwitcher /> */}
+        </>
       {/* </SimpleGrid> */}
     </>
   );

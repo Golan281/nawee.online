@@ -14,6 +14,12 @@ export const useLang = () => {
         setCurrentLang(multiLangText[0]);
         return console.table(`lang switched`, multiLangText[0]);
     }
+    
+    const switchToKor = () => {
+        setCurrentLang(multiLangText[2]);
+        return console.table(`lang switched`, multiLangText[2]);
+
+    }
 
     useEffect(()=> {
         //use effect will handle:
@@ -25,5 +31,5 @@ export const useLang = () => {
 
     },[])
 
-    return { currentLang, setCurrentLang, switchToEng, switchToHeb };
+    return { currentLang, setCurrentLang, switchToEng, switchToHeb, switchToKor };
 }
