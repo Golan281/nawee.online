@@ -19,9 +19,10 @@ import {
 // import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { LangSwitcher } from './LangSwitcher';
 
-const Links = ['HEB', 'ENG', 'KOR'];
+const Links = ['HE', 'EN', 'KR'];
 
 const NavLink = ({ children }) => (
+
   <Link
     px={2}
     py={1}

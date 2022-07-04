@@ -188,7 +188,8 @@ const ArticleList = () => {
           justifyContent="center"
           marginTop={{ base: '3', sm: '0' }}>
           {/* <BlogTags tags={['Korea', 'Product']} /> */}
-          <Heading marginTop="1">
+          <Heading as="h2" size="lg" m={4}>
+
             <Link textDecoration="none" _hover={{ textDecoration: 'none' }}          href="https://ksf.co.il/events/korean-week"
           target="_blank"
           rel="noreferrer">
@@ -256,7 +257,9 @@ const ArticleList = () => {
           justifyContent="center"
           marginTop={{ base: '3', sm: '0' }}>
           {/* <BlogTags tags={['Korea', 'Product']} /> */}
-          <Heading marginTop="1">
+
+          <Heading as="h2" size="lg" m={4}>
+
             <Link textDecoration="none" _hover={{ textDecoration: 'none' }}          href="https://www.youtube.com/watch?v=gNsDDVRsptA"
           target="_blank"
           rel="noreferrer">
