@@ -10,6 +10,7 @@ import {
   RiLinkedinBoxFill,
 } from "react-icons/ri";
 import { IconContext } from "react-icons/lib";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 //use dohalnawee.com sitemap file
 export const Contact = () => {
