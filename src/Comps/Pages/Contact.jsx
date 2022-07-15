@@ -10,14 +10,25 @@ import {
   RiLinkedinBoxFill,
 } from "react-icons/ri";
 import { IconContext } from "react-icons/lib";
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet} from "react-helmet-async";
 
 //use dohalnawee.com sitemap file
 export const Contact = () => {
   return (
-    <IconContext.Provider value={{ style: { display: "inline" }}}>
+    <IconContext.Provider
+      value={{ style: { display: "inline" } }}
+    >
+      <Helmet prioritizeSeoTags>
+        <title>
+          contact helmet test
+        </title>
+      </Helmet>
       <Box>
-        <Grid templateColumns="repeat(3, 1fr)" m={20} gap={4}>
+        <Grid
+          templateColumns="repeat(3, 1fr)"
+          m={20}
+          gap={4}
+        >
           <a
             href="https://www.instagram.com/l.nawee/"
             target="_blank"
@@ -39,15 +50,23 @@ export const Contact = () => {
           >
             <RiLinkedinBoxFill size="2rem" />
           </a>
-            <a href="tel:+972522796119">
-              <MdLocalPhone size="2rem"/>
-              <p className="contact-text">+972 52 2796 119</p>
-            </a>
-          <a href="https://play.google.com/store/apps/details?id=com.kakao.talk&hl=en&gl=US" target="_blank" rel="noreferrer">
-            <RiKakaoTalkFill size="2rem" /> <p className="contact-text">nomok1</p>
+          <a href="tel:+972522796119">
+            <MdLocalPhone size="2rem" />
+            <p className="contact-text">+972 52 2796 119</p>
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.kakao.talk&hl=en&gl=US"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <RiKakaoTalkFill size="2rem" />{" "}
+            <p className="contact-text">nomok1</p>
           </a>
           <a href="mailto:contact@Navekh.kim@gmail.com">
-            <MdEmail size="2rem" /> <p className="contact-text">Navekh.kim@gmail.com</p>
+            <MdEmail size="2rem" />{" "}
+            <p className="contact-text">
+              Navekh.kim@gmail.com
+            </p>
           </a>
         </Grid>
       </Box>
