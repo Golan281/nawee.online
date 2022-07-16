@@ -4,17 +4,25 @@ import { Contact } from './Comps/Pages/Contact';
 import { ChakraProvider } from '@chakra-ui/react'
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-// import { Portfolio } from "./Comps/Pages/Portfolio";
+import Portfolio  from "./Comps/Pages/Portfolio";
 import { LangContext } from "./Contexts/LangContext";
 import { useLang } from './Hooks/useLang';
 import GlobalTest from './Comps/Elements/GlobalTest';
-import ArticleList from './Comps/Pages/About';
+import {About} from "./Comps/Pages/About";
 import { Helmet } from 'react-helmet-async';
+import { extendTheme } from '@chakra-ui/react';
+
+const theme = extendTheme({
+  fonts: {
+    heading: `Open Sans,'Suez One','Montserrat'`,
+    body: `'Montserrat', 'arial'`,
+  },
+})
 
 function App() {
   const langContext = useLang();
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <LangContext.Provider value={langContext}>
         <div className="App">
           <Helmet prioritizeSeoTags>
@@ -31,8 +39,8 @@ function App() {
               <Route path='/*' element={<React.Fragment />}></Route>
               <Route path="/home" element={<React.Fragment />}></Route>
               <Route path="/contact" element={<Contact />}></Route>
-              <Route path="/nawee" element={<ArticleList />}></Route>
-              <Route path="/about" element={<></>}></Route>
+              <Route path="/projects" element={<Portfolio />}></Route>
+              <Route path="/about" element={<About />}></Route>
             </Routes>
             {/* <LangSwitcher /> */}
           </header>

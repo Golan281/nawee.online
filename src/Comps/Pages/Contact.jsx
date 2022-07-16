@@ -12,7 +12,6 @@ import {
 import { IconContext } from "react-icons/lib";
 import { Helmet} from "react-helmet-async";
 
-//use dohalnawee.com sitemap file
 export const Contact = () => {
   return (
     <IconContext.Provider
@@ -20,8 +19,9 @@ export const Contact = () => {
     >
       <Helmet prioritizeSeoTags>
         <title>
-          contact helmet test
+        Nave Klil Hahoresh | Contact | צרו קשר | 연락
         </title>
+        <meta name="description" content="באיזה כובע ניפגש הפעם? עמוד הבית של נָאוֶה כליל החורש (나위): מוסיקאית ומוסיקולוגית, מורת דרך, מתרגמת, מומחית לתרבות ומוסיקה קוריאנית מסורתית, מפיקת אירועים ועוד קצת.. " />
       </Helmet>
       <Box>
         <Grid

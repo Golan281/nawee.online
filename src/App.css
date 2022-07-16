@@ -3,6 +3,21 @@
   src: url('./lib/fonts/SuezOne-Regular.woff2') format('woff2'),
       url('./lib/fonts/SuezOne-Regular.woff') format('woff'),
       url('./lib/fonts/SuezOne-Regular.ttf') format('ttf');
+  font-weight:lighter;
+  font-style:normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Open+Sans:wght@300&display=swap');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -13,9 +28,13 @@
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 } */
 .App {
-  /* font-family: 'Suez One', 'Roboto', 'Arial'; */
+  font-family: 'Open Sans','Montserrat','Suez One', 'Arial', 'Helvetica', 'sans-serif';
   text-align: center;
 }
+
+/* h1 {
+  font-family: 'Suez One';
+} */
 
 .App-logo {
   height: 40vmin;

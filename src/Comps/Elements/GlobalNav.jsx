@@ -36,7 +36,7 @@ export const GlobalNav = () => {
         <Grid>{/* <LangSwitcher /> */}</Grid>
       </Grid>
       <Grid templateColumns="repeat(3, 1fr)" gap={4}>
-        <NavLink to="/nawee">
+        <NavLink to="/projects">
           <Button bg="#E25E98" color="#19132F">
             {currentLang.portfolioBtn}
           </Button>
