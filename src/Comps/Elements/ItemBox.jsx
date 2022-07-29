@@ -39,6 +39,7 @@ export const ItemBox = ({content}) => {
             zIndex="2"
             marginLeft={{ base: "0", sm: "5%" }}
             marginTop="5%"
+            // flexDirection="reverse"
           >
             <Link
               textDecoration="none"
