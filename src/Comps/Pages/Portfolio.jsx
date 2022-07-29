@@ -1,5 +1,10 @@
 import React from "react";
+import { MediaItem } from "../Elements/MediaItem";
+
+import { NavLink } from "react-router-dom";
 import {
+  Center,
+  Button,
   Box,
   Heading,
   Link,
@@ -149,34 +154,70 @@ const Portfolio = () => {
         }}
       />
       <Divider marginTop="12" />
-      <Heading as="h2" size="lg" m={4} pt={8}>
-        {portfolioContent.moreProjects_h1}
-      </Heading>
-      <ItemBox
-        content={{
-          linkUrl:
-            "https://www.explorekorea.co.il/%d7%aa%d7%a8%d7%91%d7%95%d7%aa-%d7%a7%d7%95%d7%a8%d7%99%d7%90%d7%94/%d7%9e%d7%95%d7%a1%d7%99%d7%a7%d7%94-%d7%a7%d7%95%d7%a8%d7%99%d7%90%d7%a0%d7%99%d7%aa-%d7%94%d7%a7%d7%93%d7%9e%d7%94/",
-          // imgUrl: korean_translation_sm,
-          header: portfolioContent.moreProjects_h2_gugak,
-        }}
-      />
-      <ItemBox
-        content={{
-          linkUrl:
-            "https://www.youtube.com/watch?v=sVy3ZeFXQgI&t=3366s&ab_channel=KoreanStudiesForuminIsrael",
-          // imgUrl: korean_translation_sm,
-          header: portfolioContent.moreProjects_h2_krFri,
-        }}
-      />
-      <ItemBox
-        content={{
-          linkUrl:
-            "https://www.youtube.com/watch?t=3381&v=rPVK1rzBx_Y&feature=youtu.be",
-          // imgUrl: korean_translation_sm,
-          header: portfolioContent.moreProjects_h2_Concerto,
-        }}
-      />
-      <Divider marginTop="12" />
+      <MediaItem>
+        <Heading as="h2" size="lg" m={10}>
+          {portfolioContent.moreProjects_h1}
+        </Heading>
+        <div>
+          <a
+            href="https://www.explorekorea.co.il/%d7%aa%d7%a8%d7%91%d7%95%d7%aa-%d7%a7%d7%95%d7%a8%d7%99%d7%90%d7%94/%d7%9e%d7%95%d7%a1%d7%99%d7%a7%d7%94-%d7%a7%d7%95%d7%a8%d7%99%d7%90%d7%a0%d7%99%d7%aa-%d7%94%d7%a7%d7%93%d7%9e%d7%94/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h2>
+              {portfolioContent.moreProjects_h2_gugak}
+            </h2>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://www.youtube.com/watch?v=sVy3ZeFXQgI&t=3366s&ab_channel=KoreanStudiesForuminIsrael"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h2>
+              {portfolioContent.moreProjects_h2_krFri}
+            </h2>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://www.youtube.com/watch?t=3381&v=rPVK1rzBx_Y&feature=youtu.be"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h2>
+              {portfolioContent.moreProjects_h2_Concerto}
+            </h2>
+          </a>
+        </div>
+        <Center m={10}>|
+          <img
+            src={korean_friday_sm}
+            className="portfolio-img"
+            alt="korean friday flyer"
+          ></img>
+        </Center>
+        <Center m={10}>
+          <img
+            src={jlem_tour_sm}
+            className="portfolio-img"
+            alt="jerusalem tour"
+          ></img>
+        </Center>
+        <Center m={10}>
+          <img
+            src={kim_live_sm}
+            className="portfolio-img"
+            alt="live kimchi workshop flyer"
+          ></img>
+        </Center>
+      </MediaItem>
+      <NavLink to="/contact">
+        <Button bg="#E25E98" color="#19132F">
+          {currentLang.contactBtn}
+        </Button>
+      </NavLink>
     </Container>
   );
 };
