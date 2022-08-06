@@ -21,6 +21,9 @@ export const LangSwitcher = () => {
         <Button onClick={switchToKor} bg=" #19132F" color="#ECEDED" size="md" fontSize={32} fontWeight="regular" _hover={{ color: "#E25E98"}}>
           KR
         </Button>
+        <Button onClick={switchToKor} bg=" #19132F" color="#ECEDED" size="md" fontSize={32} fontWeight="regular" _hover={{ color: "#E25E98"}}>
+          KR
+        </Button>
         {/* <Button bg="#E25E98" color="#19132F" size="xs">
           KR
         </Button> */}
