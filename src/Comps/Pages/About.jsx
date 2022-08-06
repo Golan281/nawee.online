@@ -1,8 +1,5 @@
 import { MediaItem } from "../Elements/MediaItem";
 import {
-  Heading,
-  Center,
-  Button,
   Divider,
   Container,
 } from "@chakra-ui/react";

@@ -7,16 +7,6 @@ import {
   Heading,
   Link,
   Image,
-  Text,
-  Divider,
-  HStack,
-  Container,
-  //   Tag,
-  //   Wrap,
-  //   WrapItem,
-  //   SpaceProps,
-  //   useColorModeValue,
-  //   VStack,
 } from "@chakra-ui/react";
 
 export const ItemBox = ({content}) => {

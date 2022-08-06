@@ -5,20 +5,9 @@ import { NavLink } from "react-router-dom";
 import {
   Center,
   Button,
-  Box,
   Heading,
-  Link,
-  Image,
-  Text,
   Divider,
-  HStack,
-  //   Tag,
-  //   Wrap,
-  //   WrapItem,
-  //   SpaceProps,
-  //   useColorModeValue,
   Container,
-  //   VStack,
 } from "@chakra-ui/react";
 import { Helmet } from "react-helmet-async";
 import { LangContext } from "../../Contexts/LangContext";
