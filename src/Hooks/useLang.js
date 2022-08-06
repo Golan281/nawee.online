@@ -8,16 +8,16 @@ export const useLang = () => {
     const [currentLang,setCurrentLang] = useState(multiLangText[0]);
     const switchToEng = () => {
         setCurrentLang(multiLangText[1]);
-        return console.table(`lang switched`, multiLangText[1]);
+        return multiLangText[1];
     }
     const switchToHeb = () => {
         setCurrentLang(multiLangText[0]);
-        return console.table(`lang switched`, multiLangText[0]);
+        return multiLangText[0];
     }
     
     const switchToKor = () => {
         setCurrentLang(multiLangText[2]);
-        return console.table(`lang switched`, multiLangText[2]);
+        return multiLangText[2];
 
     }
 

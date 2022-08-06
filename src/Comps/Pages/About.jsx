@@ -18,6 +18,7 @@ import c_gayageum_mooli from "../../img/c_gayageum_mooli.jpg";
 import d_rosetta_stone from "../../img/d_rosetta_stone.jpg";
 import e_nawee_tour_guide from "../../img/e_nawee_tour_guide.jpg";
 import f_nawee_working from "../../img/f_nawee_working.jpg";
+import nawee__contact from "../../img/nawee__contact.jpg";
 export const About = () => {
   const { currentLang } = useContext(LangContext);
   const { aboutContent } = currentLang;
@@ -25,8 +26,8 @@ export const About = () => {
     <Container maxW={"7xl"} p="12">
       <Helmet prioritizeSeoTags>
         <title>
-          Nave Klil Hahoresh | Projects | פרויקטים |
-          프로젝트
+          Nave Klil Hahoresh | Intro | מי אני |
+          소개
         </title>
         <meta
           name="description"
@@ -37,17 +38,19 @@ export const About = () => {
     //child container #2 */}
     <ItemBox
       content={{
-        linkUrl: "https://ksf.co.il/events/korean-week",
+        linkUrl: "no-link",
         imgUrl: a_main_prof_mooli,
         header: aboutContent.aboutMe,
+        rtl: (currentLang.lang !== 'ENG') ? true : false,
       }}
     />
     <ItemBox
       content={{
         linkUrl:
-          "https://www.youtube.com/watch?v=gNsDDVRsptA",
+        "no-link",
         imgUrl: b_nawee_produces,
         header: aboutContent.background,
+        rtl: (currentLang.lang !== 'ENG') ? true : false,
       }}
     />
 
@@ -56,9 +59,10 @@ export const About = () => {
     <ItemBox
       content={{
         linkUrl:
-          "https://www.facebook.com/media/set/?set=a.2181724548569511&type=3",
+        "no-link",
         imgUrl: c_gayageum_mooli,
         header: aboutContent.education,
+        rtl: (currentLang.lang !== 'ENG') ? true : false,
       }}
     />
 
@@ -66,76 +70,51 @@ export const About = () => {
     <ItemBox
       content={{
         linkUrl:
-          "https://www.mako.co.il/news-lifestyle/2022_q1/Article-3066a1120a81f71026.htm&sa=D&source=docs&ust=1653068284434044&usg=AOvVaw2c_MbTL3YLosFwgTHRnixk",
+        "no-link",
         imgUrl: d_rosetta_stone,
         header: aboutContent.hobbies,
+        rtl: (currentLang.lang !== 'ENG') ? true : false,
       }}
     />
     <Divider marginTop="12" />
     <ItemBox
       content={{
         linkUrl:
-          "https://www.facebook.com/Thesunavoiders",
+        "no-link",
         imgUrl: e_nawee_tour_guide,
         header: aboutContent.translationWork,
+        rtl: (currentLang.lang !== 'ENG') ? true : false,
       }}
     />
     <Divider marginTop="12" />
     <ItemBox
       content={{
         linkUrl:
-          "https://www.facebook.com/Thesunavoiders",
+        "no-link",
         imgUrl: f_nawee_working,
         header: aboutContent.tourGuideWork,
+        rtl: (currentLang.lang !== 'ENG') ? true : false,
       }}
     />
     <Divider marginTop="12" />
     <ItemBox
       content={{
         linkUrl:
-          "https://www.facebook.com/Thesunavoiders",
-        // imgUrl: sun_avoiders_sm,
+        "no-link",
+        imgUrl: nawee__contact,
         header: aboutContent.conclusion,
+        rtl: (currentLang.lang !== 'ENG') ? true : false,
       }}
     />
-    <Divider marginTop="12" />
+    {/* <Divider marginTop="12" /> */}
     <MediaItem>
         <div>
-          <a
-            href="https://www.explorekorea.co.il/%d7%aa%d7%a8%d7%91%d7%95%d7%aa-%d7%a7%d7%95%d7%a8%d7%99%d7%90%d7%94/%d7%9e%d7%95%d7%a1%d7%99%d7%a7%d7%94-%d7%a7%d7%95%d7%a8%d7%99%d7%90%d7%a0%d7%99%d7%aa-%d7%94%d7%a7%d7%93%d7%9e%d7%94/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <h2>
+            <h2 className="rtl">
               {aboutContent.myMission}
             </h2>
-          </a>
         </div>
-        <Heading as="h2" size="lg" m={10}>
-          {aboutContent.callToAction}
-        </Heading>
 
-        {/* <Center m={10}>|
-          <img
-            src={korean_friday_sm}
-            className="portfolio-img"
-            alt="korean friday flyer"
-          ></img>
-        </Center>
-        <Center m={10}>
-          <img
-            src={jlem_tour_sm}
-            className="portfolio-img"
-            alt="jerusalem tour"
-          ></img>
-        </Center>
-        <Center m={10}>
-          <img
-            src={kim_live_sm}
-            className="portfolio-img"
-            alt="live kimchi workshop flyer"
-          ></img>
-        </Center> */}
+
       </MediaItem>
   </Container>
     );

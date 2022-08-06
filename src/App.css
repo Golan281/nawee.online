@@ -30,6 +30,7 @@
 .App {
   font-family: 'Open Sans','Montserrat','Suez One', 'Arial', 'Helvetica', 'sans-serif';
   text-align: center;
+  background-color: #19132F;
 }
 
 /* h1 {
@@ -50,18 +51,18 @@
 .App-header {
   background-color: #19132F;
   min-height: 100vh;
-  min-width: 100vw;
+  min-width: 98vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #E9E9EA;
+  /* color: #CCCCCC; */
 }
 
 a, .App-link {
   text-decoration: none;
-  color: #ECEDED;
+  /* color: #ECEDED; */
   /* display: inline;
   margin: none;
   align-self: center; */
@@ -93,6 +94,18 @@ p {
   color: #E25E98;
   filter: contrast(110%);
   cursor: pointer;
+}
+
+h2 {
+  font-family: 'Helvetica';
+}
+
+.rtl {
+  /* font-family:'Rubik', 'Trashim CLM','Roboto', 'Helvetica';  */
+  direction: rtl;
+  /* text-align: start; */
+  /* z-index: 1;
+  position: relative; */
 }
 
 /* a:active {
@@ -137,8 +150,9 @@ button {
   }
   .App-logo {
     /* display: none; */
-    width: 100%;
-    height: 100%;
+    padding-top: 5rem;
+    width: 20rem;
+    height: 20rem;
   }
 } 
 /* 

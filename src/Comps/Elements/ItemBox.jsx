@@ -1,5 +1,6 @@
 //item box will hold single items
-
+import { LangContext } from "../../Contexts/LangContext";
+import { useContext } from "react";
 import React from "react";
 import {
   Box,
@@ -20,11 +21,15 @@ import {
 
 export const ItemBox = ({content}) => {
     console.log(content);
+    const { currentLang } = useContext(LangContext);
+    console.log(currentLang)
+    const flexDirection = (currentLang.lang === 'ENG') ? "row-reverse" : "row";
+    console.log(flexDirection)
     return (
         <Box
         marginTop={{ base: "1", sm: "5" }}
         display="flex"
-        flexDirection={{ base: "column", sm: "row" }}
+        flexDirection={{ base: "column", sm: flexDirection }}
         justifyContent="space-between"
       >
         <Box
@@ -48,12 +53,15 @@ export const ItemBox = ({content}) => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image
-                borderRadius="lg"
-                src={content.imgUrl}
-                alt={content.header}
-                objectFit="contain"
-              />
+              {(content.imgUrl === "no-img") ? (<div>Test</div>) : (
+                <Image
+                  borderRadius="lg"
+                  src={content.imgUrl}
+                  alt={content.header}
+                  objectFit="contain"
+                />
+
+              )}
             </Link>
           </Box>
           <Box
@@ -81,7 +89,9 @@ export const ItemBox = ({content}) => {
           marginTop={{ base: "3", sm: "0" }}
         >
           {/* <BlogTags tags={['Korea', 'Product']} /> */}
-          <Heading as="h2" size="lg" m={4}>
+          <Heading as="h2" size="lg" m={4} className={(content.rtl === true ? 'rtl' : '')} fontFamily={'Helvetica'}>
+            {(content.linkUrl === 'no-link') ? (content.header) : (
+
             <Link
               textDecoration="none"
               _hover={{ textDecoration: "none" }}
@@ -91,6 +101,7 @@ export const ItemBox = ({content}) => {
             >
               {content.header}
             </Link>
+            )}
           </Heading>
           {/* <Text
             as="p"
