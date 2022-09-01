@@ -16,7 +16,7 @@ import c_gayageum_mooli from "../../img/c_gayageum_mooli.jpg";
 import d_rosetta_stone from "../../img/d_rosetta_stone.jpg";
 import e_nawee_tour_guide from "../../img/e_nawee_tour_guide.jpg";
 import f_nawee_working from "../../img/f_nawee_working.jpg";
-import nawee__contact from "../../img/nawee__contact.jpg";
+// import nawee__contact from "../../img/nawee__contact.jpg";
 export const About = () => {
   const { currentLang } = useContext(LangContext);
   const { aboutContent } = currentLang;
