@@ -79,7 +79,7 @@ export const ItemBox = ({content}) => {
           marginTop={{ base: "3", sm: "0" }}
         >
           {/* <BlogTags tags={['Korea', 'Product']} /> */}
-          <Heading as="h2" size="lg" m={4} className={(content.rtl === true ? 'rtl' : '')} fontFamily={'Helvetica'}>
+          <Heading as="h2" size="md" m={0} className={(content.rtl === true ? 'rtl' : '')} fontFamily={'Helvetica'}>
             {(content.linkUrl === 'no-link') ? (content.header) : (
 
             <Link

@@ -10,6 +10,7 @@ import { Helmet } from "react-helmet-async";
 import { ItemBox } from "../Elements/ItemBox";
 
 import a_main_prof_mooli from "../../img/a_main_prof_mooli.jpg";
+import b_new_profile from "../../img/b_new_profile.jpg";
 import b_nawee_produces from "../../img/b_nawee_produces.jpg";
 import c_gayageum_mooli from "../../img/c_gayageum_mooli.jpg";
 import d_rosetta_stone from "../../img/d_rosetta_stone.jpg";
@@ -38,39 +39,39 @@ export const About = () => {
         linkUrl: "no-link",
         imgUrl: a_main_prof_mooli,
         header: aboutContent.aboutMe,
-        rtl: (currentLang.lang !== 'ENG') ? true : false,
+        rtl: (currentLang.lang !== 'HEB') ? false : true, //RTL only for heb
       }}
     />
+    <ItemBox
+      content={{
+        linkUrl:
+        "no-link",
+        imgUrl: b_new_profile,
+        header: aboutContent.background,
+        rtl: (currentLang.lang !== 'HEB') ? false : true,
+      }}
+    />
+
+    <Divider marginTop="12" />
+
     <ItemBox
       content={{
         linkUrl:
         "no-link",
         imgUrl: b_nawee_produces,
-        header: aboutContent.background,
-        rtl: (currentLang.lang !== 'ENG') ? true : false,
+        header: aboutContent.education,
+        rtl: (currentLang.lang !== 'HEB') ? false : true,
       }}
     />
 
     <Divider marginTop="12" />
-
     <ItemBox
       content={{
         linkUrl:
         "no-link",
         imgUrl: c_gayageum_mooli,
-        header: aboutContent.education,
-        rtl: (currentLang.lang !== 'ENG') ? true : false,
-      }}
-    />
-
-    <Divider marginTop="12" />
-    <ItemBox
-      content={{
-        linkUrl:
-        "no-link",
-        imgUrl: d_rosetta_stone,
         header: aboutContent.hobbies,
-        rtl: (currentLang.lang !== 'ENG') ? true : false,
+        rtl: (currentLang.lang !== 'HEB') ? false : true,
       }}
     />
     <Divider marginTop="12" />
@@ -78,9 +79,9 @@ export const About = () => {
       content={{
         linkUrl:
         "no-link",
-        imgUrl: e_nawee_tour_guide,
+        imgUrl: d_rosetta_stone,  
         header: aboutContent.translationWork,
-        rtl: (currentLang.lang !== 'ENG') ? true : false,
+        rtl: (currentLang.lang !== 'HEB') ? false : true,
       }}
     />
     <Divider marginTop="12" />
@@ -88,9 +89,9 @@ export const About = () => {
       content={{
         linkUrl:
         "no-link",
-        imgUrl: f_nawee_working,
+        imgUrl: e_nawee_tour_guide, 
         header: aboutContent.tourGuideWork,
-        rtl: (currentLang.lang !== 'ENG') ? true : false,
+        rtl: (currentLang.lang !== 'HEB') ? false : true,
       }}
     />
     <Divider marginTop="12" />
@@ -98,9 +99,9 @@ export const About = () => {
       content={{
         linkUrl:
         "no-link",
-        imgUrl: nawee__contact,
+        imgUrl: f_nawee_working, 
         header: aboutContent.conclusion,
-        rtl: (currentLang.lang !== 'ENG') ? true : false,
+        rtl: (currentLang.lang !== 'HEB') ? false : true,
       }}
     />
     {/* <Divider marginTop="12" /> */}
