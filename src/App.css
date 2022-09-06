@@ -108,6 +108,11 @@ h2 {
   position: relative; */
 }
 
+.word-break-normal {
+  word-break: keep-all;
+  /* border: 2px solid green; */
+  /* color: green; */
+}
 /* a:active {
   background-color: aquamarine;
 } */

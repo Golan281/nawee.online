@@ -21,6 +21,7 @@ export const ItemBox = ({content}) => {
         display="flex"
         flexDirection={{ base: "column", sm: flexDirection }}
         justifyContent="space-between"
+        className="word-break-normal"
       >
         <Box
           display="flex"
