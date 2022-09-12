@@ -12,6 +12,7 @@ import {About} from "./Comps/Pages/About";
 import { Helmet } from 'react-helmet-async';
 import { extendTheme } from '@chakra-ui/react';
 import { GlobalFooter } from './Comps/Elements/GlobalFooter';
+import { NotFound } from './Comps/Elements/NotFound';
 
 const theme = extendTheme({
   fonts: {
@@ -47,8 +48,9 @@ function App() {
         Nave Klil hahoresh 나베 클릴</Heading> */}
                     <GlobalTest />
             <GlobalNav />
+            {/* {(location.pathname !== "/404") && <GlobalNav /> } */}
             <Routes>
-              <Route path='/*' element={<React.Fragment />}></Route>
+              <Route path='/*' element={<NotFound />}></Route>
               <Route path="/home" element={<React.Fragment />}></Route>
               <Route path="/contact" element={<Contact />}></Route>
               <Route path="/projects" element={<Portfolio />}></Route>

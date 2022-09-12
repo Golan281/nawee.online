@@ -13,7 +13,7 @@ export const ItemBox = ({content}) => {
     console.log(content);
     const { currentLang } = useContext(LangContext);
     console.log(currentLang)
-    const flexDirection = (currentLang.lang === 'ENG') ? "row-reverse" : "row";
+    const flexDirection = (currentLang.lang !== 'HEB') ? "row-reverse" : "row";
     console.log(flexDirection)
     return (
         <Box

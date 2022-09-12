@@ -21,12 +21,12 @@ export const Contact = () => {
         <title>
         Nave Klil Hahoresh | Contact | צרו קשר | 연락
         </title>
-        <meta name="description" content="באיזה כובע ניפגש הפעם? עמוד הבית של נָאוֶה כליל החורש (나위): מוסיקאית ומוסיקולוגית, מורת דרך, מתרגמת, מומחית לתרבות ומוסיקה קוריאנית מסורתית, מפיקת אירועים ועוד קצת.. " />
+        <meta name="description" content="ניתן ליצור איתי קשר בטלפון, בווצאפ, במייל, בפייסבוק או באפליקציית המסרים הקוריאנית קקאו." />
       </Helmet>
       <Box>
         <Grid
           templateColumns="repeat(3, 1fr)"
-          m={20}
+          m={10}
           gap={4}
         >
           <a

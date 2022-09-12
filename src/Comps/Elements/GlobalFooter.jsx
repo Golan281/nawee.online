@@ -7,11 +7,11 @@ export const GlobalFooter = () => {
   console.log(callToAction);
   return (
     <footer>
-      <Box p={2}>
+      <Box>
         <Heading
           as="h2"
           size="lg"
-          m={10}
+          m={4}
           className={
             currentLang.lang !== "ENG" ? "rtl" : ""
           }
@@ -25,19 +25,29 @@ export const GlobalFooter = () => {
           gridAutoFlow={{ base: "row dense", sm: "column" }}
         >
           <Button bg="#E25E98" color="#19132F">
+          <a href="https://wa.link/p13krt"  target="_blank" rel="noreferrer">
             {callToAction.production}
+          </a>
           </Button>
           <Button bg="#E25E98" color="#19132F">
+          <a href="https://wa.link/tg61hr"  target="_blank" rel="noreferrer">
             {callToAction.travel}
+          </a>
           </Button>
           <Button bg="#E25E98" color="#19132F">
+          <a href="https://wa.link/ciazm4"  target="_blank" rel="noreferrer">
             {callToAction.music}
+          </a>
           </Button>
           <Button bg="#E25E98" color="#19132F">
+          <a href="https://wa.link/71jtgv"  target="_blank" rel="noreferrer">
             {callToAction.translation}
+          </a>
           </Button>
           <Button bg="#E25E98" color="#19132F">
+          <a href="https://wa.link/xpnyw4"  target="_blank" rel="noreferrer">
             {callToAction.other}
+          </a>
           </Button>
         </Box>
           <br></br>

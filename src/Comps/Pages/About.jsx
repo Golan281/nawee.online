@@ -107,7 +107,8 @@ export const About = () => {
     {/* <Divider marginTop="12" /> */}
     <MediaItem>
         <div>
-            <h2 className="rtl">
+            {/* <h2 className={(currentLang.lang !== 'HEB')? "" : "rtl"}> */}
+            <h2>
               {aboutContent.myMission}
             </h2>
         </div>
