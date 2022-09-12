@@ -13,6 +13,7 @@ import { Helmet } from 'react-helmet-async';
 import { extendTheme } from '@chakra-ui/react';
 import { GlobalFooter } from './Comps/Elements/GlobalFooter';
 import { NotFound } from './Comps/Elements/NotFound';
+import logo from "./img/logo_pink.png";
 
 const theme = extendTheme({
   fonts: {
@@ -41,6 +42,9 @@ function App() {
           <Helmet prioritizeSeoTags>
             <title>נָאוֶה כליל החורש | Nave Klil Hahoresh | Korea & Israel Music</title>
             <meta name="description" content="באיזה כובע ניפגש הפעם? עמוד הבית של נָאוֶה כליל החורש (나위): מוסיקאית ומוסיקולוגית, מורת דרך, מתרגמת, מומחית לתרבות ומוסיקה קוריאנית מסורתית, מפיקת אירועים ועוד קצת.. " />
+            <meta itemprop="image" content={logo} />
+        <meta itemprop="og:image" content={logo} />
+        <meta itemprop="twitter:image" content={logo} />
           </Helmet>
           <header className="App-header">
             {/* <img src={logo} className="App-logo" alt="logo" />
@@ -51,7 +55,7 @@ function App() {
             {/* {(location.pathname !== "/404") && <GlobalNav /> } */}
             <Routes>
               <Route path='/*' element={<NotFound />}></Route>
-              <Route path="/home" element={<React.Fragment />}></Route>
+              <Route path={"/home" || "/"} element={<React.Fragment />}></Route>
               <Route path="/contact" element={<Contact />}></Route>
               <Route path="/projects" element={<Portfolio />}></Route>
               <Route path="/about" element={<About />}></Route>

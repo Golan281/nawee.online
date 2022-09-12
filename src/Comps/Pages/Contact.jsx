@@ -11,6 +11,7 @@ import {
 } from "react-icons/ri";
 import { IconContext } from "react-icons/lib";
 import { Helmet} from "react-helmet-async";
+import nawee__contact from "../../img/nawee__contact.jpg"
 
 export const Contact = () => {
   return (
@@ -22,6 +23,9 @@ export const Contact = () => {
         Nave Klil Hahoresh | Contact | צרו קשר | 연락
         </title>
         <meta name="description" content="ניתן ליצור איתי קשר בטלפון, בווצאפ, במייל, בפייסבוק או באפליקציית המסרים הקוריאנית קקאו." />
+        <meta itemprop="image" content={nawee__contact} />
+        <meta itemprop="og:image" content={nawee__contact} />
+        <meta itemprop="twitter:image" content={nawee__contact} />
       </Helmet>
       <Box>
         <Grid

@@ -31,6 +31,9 @@ export const About = () => {
           name="description"
           content="באיזה כובע ניפגש הפעם? עמוד הבית של נָאוֶה כליל החורש (나위): מוסיקאית ומוסיקולוגית, מורת דרך, מתרגמת, מומחית לתרבות ומוסיקה קוריאנית מסורתית, מפיקת אירועים ועוד קצת.. "
         />
+        <meta itemprop="image" content={a_main_prof_mooli} />
+        <meta itemprop="og:image" content={a_main_prof_mooli} />
+        <meta itemprop="twitter:image" content={a_main_prof_mooli} />
       </Helmet>
     {/* //child Container here?
     //child container #2 */}

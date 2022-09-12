@@ -83,6 +83,9 @@ const Portfolio = () => {
           name="description"
           content="תרגום עברית קוריאנית, תרגום אנגלית קוריאנית, הפקות אירועים, הוראת דרך, מוסיקה מסורתית קוריאנית, הרצאות, הופעות מוסיקה ועוד."
         />
+        <meta itemprop="image" content={gayageum_sm} />
+        <meta itemprop="og:image" content={gayageum_sm} />
+        <meta itemprop="twitter:image" content={gayageum_sm} />
       </Helmet>
 
       {/* //child Container here?
