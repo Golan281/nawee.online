@@ -35,7 +35,6 @@ export const Contact = () => {
           content={nawee__contact}
         />
       </Helmet>
-
       <IconContext.Provider
         value={{ style: { display: "inline" } }}
       >

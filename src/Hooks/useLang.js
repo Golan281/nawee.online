@@ -1,10 +1,6 @@
 import { useState, useEffect } from "react"
 import { multiLangText } from "../lib/multiLang";
-
-
-  //should affect the whole site, but currently just the menu & "מה אני" & the meta title/desc of both pages
 export const useLang = () => {
-
     const [currentLang,setCurrentLang] = useState(multiLangText[0]);
     const switchToEng = () => {
         setCurrentLang(multiLangText[1]);
@@ -14,13 +10,10 @@ export const useLang = () => {
         setCurrentLang(multiLangText[0]);
         return multiLangText[0];
     }
-    
     const switchToKor = () => {
         setCurrentLang(multiLangText[2]);
         return multiLangText[2];
-
     }
-
     useEffect(()=> {
         //use effect will handle:
         //  - menu items

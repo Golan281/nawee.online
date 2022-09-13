@@ -63,7 +63,5 @@ export const multiLangText = [
         callToAction: {header:'연락주세요',
         production: '프로듀서', travel: '가이드', music: '음악', translation: '번역 / 통역', other: '다른' }
     },
-
 ];
-
 Object.freeze(multiLangText);
