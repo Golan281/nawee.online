@@ -1,4 +1,3 @@
-// import { MediaItem } from "./MediaItem";
 import { Box, Heading } from "@chakra-ui/react";
 export const NotFound = () => {
   return (

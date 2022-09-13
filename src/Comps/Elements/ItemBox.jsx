@@ -1,13 +1,15 @@
 //item box will hold single items
 import { LangContext } from "../../Contexts/LangContext";
 import { useContext } from "react";
-import React from "react";
+import React, { Suspense } from "react";
+// import Loading from 'react-simple-loading';
 import {
   Box,
   Heading,
   Link,
   Image,
 } from "@chakra-ui/react";
+const LazyImage = React.lazy(async() => await import("./LazyImage"));
 
 export const ItemBox = ({content}) => {
     console.log(content);
@@ -44,13 +46,23 @@ export const ItemBox = ({content}) => {
               target="_blank"
               rel="noreferrer"
             >
-              {(content.imgUrl === "no-img") ? (<div>Test</div>) : (
+              {(content.imgUrl === "no-img") ? (<div></div>) : (
+                // <Suspense 
+                // fallback={<div>Loading...</div>}
+                // // <Loading 
+                // //   color={'#000000'}
+                // //   stroke={'10px'}
+                // //   size={'100px'} />
+                // >
+
                 <Image
+                  // content={content}
                   borderRadius="lg"
                   src={content.imgUrl}
                   alt={content.header}
                   objectFit="contain"
-                />
+                  />
+                  // </Suspense>
 
               )}
             </Link>

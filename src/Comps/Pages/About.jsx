@@ -3,12 +3,10 @@ import {
   Divider,
   Container,
 } from "@chakra-ui/react";
-
 import { LangContext } from "../../Contexts/LangContext";
 import { useContext } from "react";
 import { Helmet } from "react-helmet-async";
 import { ItemBox } from "../Elements/ItemBox";
-
 import a_main_prof_mooli from "../../img/a_main_prof_mooli.jpg";
 import b_new_profile from "../../img/b_new_profile.jpg";
 import b_nawee_produces from "../../img/b_nawee_produces.jpg";
@@ -16,7 +14,6 @@ import c_gayageum_mooli from "../../img/c_gayageum_mooli.jpg";
 import d_rosetta_stone from "../../img/d_rosetta_stone.jpg";
 import e_nawee_tour_guide from "../../img/e_nawee_tour_guide.jpg";
 import f_nawee_working from "../../img/f_nawee_working.jpg";
-// import nawee__contact from "../../img/nawee__contact.jpg";
 export const About = () => {
   const { currentLang } = useContext(LangContext);
   const { aboutContent } = currentLang;
@@ -35,8 +32,6 @@ export const About = () => {
         <meta itemprop="og:image" content={a_main_prof_mooli} />
         <meta itemprop="twitter:image" content={a_main_prof_mooli} />
       </Helmet>
-    {/* //child Container here?
-    //child container #2 */}
     <ItemBox
       content={{
         linkUrl: "no-link",
@@ -54,9 +49,7 @@ export const About = () => {
         rtl: (currentLang.lang !== 'HEB') ? false : true,
       }}
     />
-
     <Divider marginTop="12" />
-
     <ItemBox
       content={{
         linkUrl:
@@ -66,7 +59,6 @@ export const About = () => {
         rtl: (currentLang.lang !== 'HEB') ? false : true,
       }}
     />
-
     <Divider marginTop="12" />
     <ItemBox
       content={{
@@ -107,7 +99,6 @@ export const About = () => {
         rtl: (currentLang.lang !== 'HEB') ? false : true,
       }}
     />
-    {/* <Divider marginTop="12" /> */}
     <MediaItem>
         <div>
             {/* <h2 className={(currentLang.lang !== 'HEB')? "" : "rtl"}> */}
@@ -115,8 +106,6 @@ export const About = () => {
               {aboutContent.myMission}
             </h2>
         </div>
-
-
       </MediaItem>
   </Container>
     );

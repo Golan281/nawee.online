@@ -5,9 +5,7 @@ import {
 } from "@chakra-ui/react";
 import { LangContext } from "../../Contexts/LangContext";
 import { useContext } from "react";
-
 export const LangSwitcher = () => {
-  
   const { switchToEng, switchToHeb, switchToKor} = useContext(LangContext);
   return (
     <Center>
@@ -21,9 +19,6 @@ export const LangSwitcher = () => {
         <Button onClick={switchToKor} bg=" #19132F" color="#ECEDED" size="md" fontSize={18} fontWeight="regular" _hover={{ color: "#E25E98"}}>
           KR
         </Button>
-        {/* <Button bg="#E25E98" color="#19132F" size="xs">
-          KR
-        </Button> */}
       </Grid>
     </Center>
   );
