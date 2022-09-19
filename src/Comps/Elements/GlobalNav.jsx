@@ -19,7 +19,7 @@ export const GlobalNav = () => {
       <Grid templateColumns="repeat(1, 2fr)" gap={2} >
         <Grid templateRows="repeat(1, 1fr)" >
           <Center>
-            <Heading as="h1" size="xl">
+            <Heading as="h1" size="xl" fontFamily={'Suez One'}>
               {currentLang.logo}
             </Heading>
           </Center>

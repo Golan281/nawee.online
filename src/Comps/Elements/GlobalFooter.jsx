@@ -16,6 +16,7 @@ export const GlobalFooter = () => {
           as="h2"
           size="lg"
           m={4}
+          fontFamily={'Suez One'}
           className={
             currentLang.lang !== "ENG" ? "rtl" : ""
           }
