@@ -101,7 +101,6 @@ export const About = () => {
     />
     <MediaItem>
         <div>
-            {/* <h2 className={(currentLang.lang !== 'HEB')? "" : "rtl"}> */}
             <h2>
               {aboutContent.myMission}
             </h2>

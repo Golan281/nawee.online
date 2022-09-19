@@ -1,6 +1,5 @@
 export const multiLangText = [
     //aka [0]
-    //maybe make portfolio content an arr to easily loop through it in V2
     {
         lang: 'HEB', meta: 'נאוה', logo: 'נָאוֶה כליל החורש', aboutBtn: 'מי אני', contactBtn: 'צרו קשר', portfolioBtn: 'פרויקטים', portfolioContent: {
             korea_h1: 'קוריאה בישראל',

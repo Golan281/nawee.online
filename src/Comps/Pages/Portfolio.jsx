@@ -38,8 +38,6 @@ const Portfolio = () => {
         <meta itemprop="og:image" content={gayageum_sm} />
         <meta itemprop="twitter:image" content={gayageum_sm} />
       </Helmet>
-      {/* //child Container here?
-      //child container #2 */}
       <Heading as="h2" size="lg" m={4}>
         {portfolioContent.korea_h1}
       </Heading>
@@ -59,7 +57,6 @@ const Portfolio = () => {
         }}
       />
       <Divider marginTop="12" />
-      {/* hafakot */}
       <Heading as="h2" size="lg" m={4} pt={8}>
         {portfolioContent.productions_h1}
       </Heading>

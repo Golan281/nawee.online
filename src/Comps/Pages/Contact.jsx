@@ -13,7 +13,6 @@ import { IconContext } from "react-icons/lib";
 import { Helmet } from "react-helmet-async";
 import nawee__contact from "../../img/nawee__contact.jpg";
 import React from "react";
-
 export const Contact = () => {
   return (
     <React.Fragment>

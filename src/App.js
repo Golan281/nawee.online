@@ -24,21 +24,14 @@ const theme = extendTheme({
     global: {
       // styles for the `body`
       body: {
-        // bg: 'gray.400',
         color: '#CCCCCC',
       },
-      button: {
-        bg: '#E25E98',
-        color: '#19132F',
-      }
     }
   }
 })
-
 function App() {
   const langContext = useLang();
   const location = useLocation();
-  console.log(location.pathname)
   return (
     <React.Fragment>
       <Helmet prioritizeSeoTags>
@@ -52,14 +45,10 @@ function App() {
         <LangContext.Provider value={langContext}>
           <div className="App">
             <header className="App-header">
-              {/* <img src={logo} className="App-logo" alt="logo" />
-          <Heading>נָאוֶה כליל החורש
-        Nave Klil hahoresh 나베 클릴</Heading> */}
               <GlobalLangBar />
               <GlobalNav />
-              {/* {(location.pathname !== "/404") && <GlobalNav /> } */}
               <Routes>
-                <Route path="/home" exact element={<React.Fragment />}></Route>
+                <Route path="/home" exact element={<React.Fragment />} />
                 <Route
                     path="/"
                     exact element={<Navigate to="/home" replace />}
@@ -68,10 +57,10 @@ function App() {
                     path="/*"
                     exact element={<Navigate to="/404" replace />}
                 />
-                <Route path="/contact" exact element={<Contact />}></Route>
-                <Route path="/projects" exact element={<Portfolio />}></Route>
-                <Route path="/about" exact element={<About />}></Route>
-                <Route path='/404' element={<NotFound />}></Route>
+                <Route path="/contact" exact element={<Contact />} />
+                <Route path="/projects" exact element={<Portfolio />} />
+                <Route path="/about" exact element={<About />} />
+                <Route path='/404' element={<NotFound />} />
               </Routes>
               {(location.pathname !== "/home") && <GlobalFooter />}
             </header>
@@ -81,5 +70,4 @@ function App() {
     </React.Fragment>
   );
 }
-
 export default App;

@@ -1,22 +1,16 @@
 //item box will hold single items
 import { LangContext } from "../../Contexts/LangContext";
 import { useContext } from "react";
-import React, { Suspense } from "react";
-// import Loading from 'react-simple-loading';
+import React from "react";
 import {
   Box,
   Heading,
   Link,
   Image,
 } from "@chakra-ui/react";
-const LazyImage = React.lazy(async() => await import("./LazyImage"));
-
 export const ItemBox = ({content}) => {
-    console.log(content);
     const { currentLang } = useContext(LangContext);
-    console.log(currentLang)
     const flexDirection = (currentLang.lang !== 'HEB') ? "row-reverse" : "row";
-    console.log(flexDirection)
     return (
         <Box
         marginTop={{ base: "1", sm: "5" }}
@@ -37,7 +31,6 @@ export const ItemBox = ({content}) => {
             zIndex="2"
             marginLeft={{ base: "0", sm: "5%" }}
             marginTop="5%"
-            // flexDirection="reverse"
           >
             <Link
               textDecoration="none"
@@ -47,23 +40,12 @@ export const ItemBox = ({content}) => {
               rel="noreferrer"
             >
               {(content.imgUrl === "no-img") ? (<div></div>) : (
-                // <Suspense 
-                // fallback={<div>Loading...</div>}
-                // // <Loading 
-                // //   color={'#000000'}
-                // //   stroke={'10px'}
-                // //   size={'100px'} />
-                // >
-
                 <Image
-                  // content={content}
                   borderRadius="lg"
                   src={content.imgUrl}
                   alt={content.header}
                   objectFit="contain"
                   />
-                  // </Suspense>
-
               )}
             </Link>
           </Box>
@@ -74,10 +56,6 @@ export const ItemBox = ({content}) => {
             height="100%"
           >
             <Box
-              //   bgGradient={useColorModeValue(
-              //     'radial(orange.600 1px, transparent 1px)',
-              //     'radial(orange.300 1px, transparent 1px)'
-              //   )}
               backgroundSize="20px 20px"
               opacity="0.4"
               height="100%"
@@ -91,10 +69,8 @@ export const ItemBox = ({content}) => {
           justifyContent="center"
           marginTop={{ base: "3", sm: "0" }}
         >
-          {/* <BlogTags tags={['Korea', 'Product']} /> */}
           <Heading as="h2" size="md" m={0} className={(content.rtl === true ? 'rtl' : '')} fontFamily={'Helvetica'}>
             {(content.linkUrl === 'no-link') ? (content.header) : (
-
             <Link
               textDecoration="none"
               _hover={{ textDecoration: "none" }}
@@ -106,17 +82,6 @@ export const ItemBox = ({content}) => {
             </Link>
             )}
           </Heading>
-          {/* <Text
-            as="p"
-            marginTop="2"
-            color={useColorModeValue('gray.700', 'gray.200')}
-            fontSize="lg">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-          </Text> */}
-          {/* <BlogAuthor name="John Doe" date={new Date('2021-04-06T19:01:27Z')} /> */}
         </Box>
       </Box>
     )
