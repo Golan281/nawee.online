@@ -16,17 +16,16 @@ export const GlobalNav = () => {
           <img src={logo} className="App-logo" alt="logo" width="100%" height=
           "100%"/>
         </NavLink>
-      <Grid templateColumns="repeat(1, 2fr)" gap={2}>
-        <Grid templateRows="repeat(1, 1fr)">
+      <Grid templateColumns="repeat(1, 2fr)" gap={2} >
+        <Grid templateRows="repeat(1, 1fr)" >
           <Center>
             <Heading as="h1" size="xl">
               {currentLang.logo}
             </Heading>
           </Center>
         </Grid>
-        {/* <Grid><LangSwitcher /></Grid> */}
       </Grid>
-      <Grid templateColumns="repeat(3, 1fr)" gap={4}>
+      <Grid templateColumns="repeat(3, 1fr)" gap={4} pt={4}>
         <NavLink to="/projects">
           <Button bg="#E25E98" color="#19132F">
             {currentLang.portfolioBtn}
