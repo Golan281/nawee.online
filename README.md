@@ -1,4 +1,4 @@
-# A promotional website for the very talented Nave Klil Hahoresh, a  polymath and polyglot
+# A promotional website for the very talented Nave Klil Hahoresh, a polymath and a polyglot
 deployed at: https://dohalnawee.com
 
 # Powered by:
