@@ -9,6 +9,7 @@ import { useContext } from "react";
 export const GlobalFooter = () => {
   const { currentLang } = useContext(LangContext);
   const { callToAction } = currentLang;
+  const year = new Date().getFullYear();
   return (
     <footer>
       <Box pt={2}>
@@ -50,7 +51,7 @@ export const GlobalFooter = () => {
           <Box fontFamily={"Helvetica"}>
             <p>
               &#169; All rights reserved to Nave Klil
-              hahoresh 나베 클릴 2022
+              hahoresh 나베 클릴 {year}
               <br></br>
               &#169; All photographs created and owned By{" "}
               <a
@@ -60,7 +61,7 @@ export const GlobalFooter = () => {
               >
                 Mooli Goldberg
               </a>{" "}
-              2022, unless stated otherwise.
+              {year}, unless stated otherwise.
               <br></br>
               Developed with &#128156; by{" "}
               <a
